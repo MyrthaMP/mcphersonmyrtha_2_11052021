@@ -1,9 +1,75 @@
-h1 {
-    color: brown;
-    font-size: 60px;
+/* --- paramètre du site --- */
+* 
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url('Raleway/static/Raleway-Regular.ttf');
+    src: url('Raleway/static/Raleway-Regular.ttf') format('truetype');
+    
+}
+
+
+/* --- zone de recherche --- */ 
+
+#logo {
+    background-image url(images\logo\Reservia@3x.png);
+    width: 5%;
+    
+   
+}
+#iconmapmaker{
+    width: 1%;
+}
+#filtres {
+    font-weight: bold;
+}
+#inscription {
+    color: #0065fc;  
+    font-weight: bold;   
+}
+
+h1{
+    font-weight : bold; /* Pour mettre en gras*/
+    font-size: 1em;
+   
+}
+
+h2{
+    color: chartreuse;
+}
+#iconinfo{
+    width: 1%;
+}
+
+/* --- Hébergement à Marseille --- */
+#photoshebergements
+img{
+    width: 10%;
+}
+
+
+/* --- Les plus populaires --- */
+#photospopulaires
+img{
+    width: 5%;
+    
+}
+#populaires{
+    color: coral;
+}
+
+/* --- Activité à Marseille --- */
+.photosunetquatre
+img{
+    width: 2%;
+}
+    
+
+/* exemple de modif*/
+ {  color: rgb(226, 15, 131);
+    font-size: 20px;
     background-color: chartreuse;
     padding: 30px;
     margin: 80px;
     border : 3px solid black;
-    width: 30%;
-}
+    width: 2%; }
+
