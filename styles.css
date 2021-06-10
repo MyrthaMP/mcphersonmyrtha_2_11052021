@@ -1,68 +1,302 @@
 /* --- paramètre du site --- */
-* 
-@font-face {
-    font-family: 'Raleway', sans-serif;
-    src: url('Raleway/static/Raleway-Regular.ttf');
-    src: url('Raleway/static/Raleway-Regular.ttf') format('truetype');
-    
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&display=swap');
+* {font-family: 'Raleway', sans-serif;
 }
 
-
-/* --- zone de recherche --- */ 
-
-#logo {
-    background-image url(images\logo\Reservia@3x.png);
-    width: 5%;
-    
-   
+h1{
+    font-size: 14px;
+    font-weight : bold; /* Pour mettre en gras*/
 }
-#iconmapmaker{
-    width: 1%;
+
+h2{
+font-size: 14px;
+font-weight: bold;
 }
-#filtres {
+
+h3{
+    font-size: 11px;
     font-weight: bold;
+}
+/* --- PARTIE HEADER --- */
+header {
+     display:flex;
+     width: auto;
+     height: 15%;
+     align-items: center;
+    
+}
+/* --- Logo Reservia ---*/
+.logoreservia {
+    width: 70px;
+}
+
+#logo{
+    width: 100%;
+}
+
+/* --- Menu ---*/
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content : flex-end;
+    font-size: 12px;   
+}
+
+header nav div{
+    padding: 10px;
+}
+
+.menuunetdeux{
+    text-decoration: none;
+    color: black;
+    font-style: normal;   
+}
+ 
 }
 #inscription {
     color: #0065fc;  
     font-weight: bold;   
 }
 
-h1{
-    font-weight : bold; /* Pour mettre en gras*/
-    font-size: 1em;
-   
+#menu a:hover /* --- Survol menu ---*/
+{   text-decoration: overline;
+    color: #0065fc;
+  
+}
+#menu :visited /* --- garder la couleur noire apres un clic */
+{
+    color: black;
 }
 
-h2{
-    color: chartreuse;
+/* --- FIN PARTIE HEADER --- */
+
+/* --- SECTION RECHERCHE --- */
+ #intro{
+     align-content: stretch;
+ } 
+#intro h1{
+    font-size: 14px;
+}
+#intro p{
+    font-size: 10px;
+}
+ /* --- ligne recherche --- */
+
+#lignerecherche{
+    display: flex;
+    background-color: pink;
+}
+#conteneuriconmapmaker{
+    display: flex;
+    width: 15px;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+    background-color: #f2f2f2;
+}
+#iconmapmaker{
+    width: 60%; 
+}
+
+#conteneurboutonrecherche{
+    display: flex;
+    background-color: #0065fc;
+}
+/* ---Filtres ---*/
+
+#lignefiltre {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    height: 5%;   
+    background-color: orange;   
+}
+
+#textefiltre{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    font-weight: bold;
+    font-size: 12px;
+    width: 50px;
+}
+
+#ensembleblocfiltre{
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+    height: 30px;
+    width: 800px;
+  
+}
+.petitblocfiltre{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px; 
+    border:2px solid grey;
+    width: auto;
+    height: 29px;
+}
+.petitblocfiltre p{
+    font-weight: bold;
+    font-size: 12px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    
+}
+.conteneuriconf{  /* --- a garder ---*/
+    display: flex;
+    background-color: #deebff;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    justify-content: center; 
+    align-items: center;
+}  
+
+.iconf{/* --- a garder ---*/
+    display: flex;
+    width: 40%;
+    align-items: center;
+    border-radius: 50%; 
+  
+       
+}
+#texteinfo{
+    display: flex;
+}
+
+#texteinfo p{
+    font-size: 10px;
+    margin-inline-start: 5px;
 }
 #iconinfo{
-    width: 1%;
+    width: 10px;
+}
+/* --- FIN SECTION RECHERCHE ---*/
+
+/* --- SECTION HEBERGEMENT ---*/
+#hebergement{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+}
+/* --- Sous section Hébergement à Marseille --- */
+#hebergementmarseille{
+    background-color: grey;
+    width: 70%;
+    border-radius: 5%;
 }
 
-/* --- Hébergement à Marseille --- */
-#photoshebergements
-img{
-    width: 10%;
+#ensemblepetitsblocs{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+background-color: green;    
+} 
+
+.petitbloch{
+    width:250px;
+    height: 170px;
+    background-color: white;
+    margin:15px;
+    padding: 5px;
+    border-radius: 20px;  
 }
 
-
-/* --- Les plus populaires --- */
-#photospopulaires
-img{
-    width: 5%;
-    
+.photoh{
+    width: 250px;
+    height: 100px;;
+    border-radius: 15px 15px 0 0 ;
 }
+/* --- Sous section Les plus populaires --- */
 #populaires{
-    color: coral;
+    flex-direction: column;
+    width: 25% ;
+    background-color: grey;
+    border-radius: 15px;
+    }
+
+#ensemblepetitsblocspop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: hotpink;
+    
+}
+.petitblocpop{
+    display: flex;
+    width:80%;
+    background-color: white;
+    margin:20px;
+    padding: 5px;
+    border-radius: 20px; 
+       
 }
 
-/* --- Activité à Marseille --- */
-.photosunetquatre
-img{
-    width: 2%;
+
+.photopop{
+    width: 100px;
+    height:100px;
+    border-radius: 10px 0 0 10px ;
 }
-    
+
+
+
+/* --- FIN SECTION HEBERGEMENT --- */
+
+
+/* --- SECTION ACTIVITE --- */
+
+#photosactivites{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 200px;
+}
+ 
+
+.photosunetquatre{
+    width: 200px;
+    height: 220px;
+    border-radius: 15px 15px 0 0;
+}
+.photosdeuxetsix{
+    width: 200px;
+    height: 100px;
+    border-radius: 15px 15px 0 0;
+}
+.photostroisetcinq{
+    width: 200px;
+    height: 70px;
+    border-radius: 15px 15px 0 0;
+}
+ /* FIN SECTION ACTIVITE ---*/
+ 
+
+ /* --- PARTIE FOOTER --- */ 
+#footer{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #f2f2f2;
+}
+ h4{
+font-weight: bold;
+}
+
+.petitblocfooter{
+   margin-right: 150px;
+   margin-left: 50px;
+   mar
+   font-size: 10px;
+   
+}
+ /* --- FIN PARTIE FOOTER --- */
+
 
 /* exemple de modif*/
  {  color: rgb(226, 15, 131);
