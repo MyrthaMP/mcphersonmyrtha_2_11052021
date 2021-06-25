@@ -21,11 +21,11 @@
 
     <nav id="menu">
         <div class="menuunetdeux"> 
-            <a href="#Hebergements">Hébergements</a> 
+            <a href="#Hebergements"> <span id="menuhebergements">Hébergements</span> </a> 
         </div>
      
         <div class="menuunetdeux">  
-            <a href="#Activites">Activités</a>
+            <a href="#Activites"> <span id="menuactivites">Activités</span> </a>
         </div>
      
         <div id="inscription">
@@ -47,13 +47,13 @@
    <div id="lignerecherche">
 
         <div id="conteneuriconmapmarker">
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="fas fa-map-marker-alt" id="iconmapmarker" ></i>
         </div>
 
         <form method="post" action="#">   
             <div id="conteneurboutonrecherche">
                 
-                    <input type="text" name="recherche" placeholder="Marseille, France"/>
+                    <input type="text" name="recherche" placeholder="Marseille, France" id="champsderecherche"/>
                     <input type="button" value="Rechercher" id="boutonrechercher"  />
                 
             </div>
@@ -241,9 +241,9 @@
         <div id="lignepop">
             <h2>Les plus populaires</h2>
 
-            <div id="conteneuriconcroissance">
+            <span id="conteneuriconcroissance">
                 <i class="fas fa-chart-line"></i>
-            </div>
+            </span>
         </div>
 
         <div id="ensemblepetitsblocspop">
