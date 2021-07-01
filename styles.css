@@ -495,26 +495,60 @@ header nav div{
 @media screen and (max-width: 500px) {
 /* MENU */
 
+#lignefiltre{
+   flex-direction: column;
+   margin-bottom: 60px;
+   width: 100%;
+   
+}
 
 
 #ensembleblocfiltre{
-    flex-wrap: wrap;
-  
+    flex-wrap: wrap; 
+      
  }
 
  .petitblocfiltre{
-     font-size: 16px;
-  
+    justify-content: flex-start;
+    font-size: 18px;
+    width: auto;   
+    margin: 5px;
+ }
+
+ .petitblocfiltre p{
+     font-size: 14px;
  }
 
 /* HERBERGEMENT */
 
+#Hebergements{
+    flex-direction: column;    
+}
+
 #hebergementmarseille{
     order: 2;
     margin-top: 30px;
+    margin-right: 0;
+    width: 100%;
+    flex-direction: column;    
 }
+
+#ensemblepetitsblocs{
+    flex-direction: column;            
+}
+
+.petitbloch{
+    width: 100%;
+}
+
+
+#afficherplus{
+    width: auto;
+}
+
 #populaires{
     order: 1;
+    width: 100%;
 }
 
 /* ACTIVITE */
