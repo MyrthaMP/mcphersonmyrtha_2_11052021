@@ -10,8 +10,8 @@ h1{
 }
 
 h2{
-font-size: 14px;
-font-weight: bold;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 h3{
@@ -37,8 +37,7 @@ header {
      height: 50px;
      align-items: center; 
      margin-left: 30px;
-     margin-right: 30px;
-     
+     margin-right: 30px; 
 }
 
 /* --- Logo Reservia ---*/
@@ -92,9 +91,8 @@ header nav div{
 {   border-top: 1px solid #0065fc;
     padding-top : 16px;
     color: #0065fc;
-    
-  
 }
+
 #menu :visited /* --- garder la couleur noire apres un clic */
 {
     color: black;
@@ -106,8 +104,7 @@ header nav div{
  #intro{
      display: flex;
      flex-direction: column;
-     align-content: flex-start;
-          
+     align-content: flex-start;          
 }
 
 #intro h1{
@@ -141,6 +138,7 @@ header nav div{
     padding-left: 10px;
     padding-right: 10px;
 }
+
 #conteneuriconmapmarker{
     display: flex;
     width: 20px;
@@ -149,6 +147,7 @@ header nav div{
     background-color: #f2f2f2;
     padding: 5px;
 }
+
 #iconmapmarker{
     display: flex;
     justify-content: center;
@@ -158,9 +157,9 @@ header nav div{
 }
 
 #conteneurboutonrecherche{
-    display: flex;
-    
+    display: flex;    
 }
+
 /* ---Filtres ---*/
 
 #lignefiltre {
@@ -256,9 +255,11 @@ header nav div{
     color: #0065fc;
     border-radius: 50px;
 }  
+
 /* --- FIN SECTION RECHERCHE ---*/
 
 /* --- SECTION HEBERGEMENT ---*/
+
 #Hebergements{
     display: flex;
     height: auto;
@@ -287,8 +288,7 @@ header nav div{
     margin-right:15px;
     margin-bottom: 30px;
     padding: 5px;
-    border-radius: 20px;
-      
+    border-radius: 20px;      
 }
 
 .petitbloch a{
@@ -312,10 +312,12 @@ header nav div{
     font-size: 10px;
     color: #0065fc;
 }
+
 .star .stargrise{
     font-size: 10px;
     color: #f2f2f2;
 }
+
 .descriptif{
     padding-left: 10px;    
 }
@@ -328,7 +330,9 @@ header nav div{
     font-size: 13px;
     font-weight: bold;
 }
+
 /* --- Sous section Les plus populaires --- */
+
 #populaires{
     flex-direction: column;
     width: 30% ;
@@ -358,7 +362,7 @@ header nav div{
     justify-content: center;
     align-items: center;
     width: 100%;   
-    }
+}
 
 .petitblocpop{
     display: flex;
@@ -400,8 +404,6 @@ header nav div{
     object-fit: cover;
 }
 
-
-
 /* --- FIN SECTION HEBERGEMENT --- */
 
 
@@ -437,7 +439,7 @@ header nav div{
     width: 100%;
 }
 
- .petitblocactivite{
+.petitblocactivite{
     box-shadow: 4px 7px 23px 3px #f2f2f2;
     border-radius: 15px 15px 15px 15px;      
 }
@@ -447,11 +449,11 @@ header nav div{
     color: black;
 }
 
- .petitblocactivite h3{
+.petitblocactivite h3{
      padding-left: 10px;
      padding-bottom: 10px;
      font-weight: bold;     
- }
+}
 
 .photosunetquatre{
     width: 100%;
@@ -478,6 +480,7 @@ header nav div{
  
 
  /* --- PARTIE FOOTER --- */ 
+
 #footer{
     display: flex;
     justify-content: flex-start;
@@ -493,16 +496,16 @@ header nav div{
     color: black;
 }
 
- h4{
+h4{
  font-weight: bold;
 }
 
 .petitblocfooter{
    width: 33%;
    margin-left: 10px;
-   font-size: 12px;
-   
+   font-size: 12px;   
 }
+
  /* --- FIN PARTIE FOOTER --- */
 
  /* -- DEBUT MEDIA QUERIES --*/
@@ -515,24 +518,21 @@ header nav div{
 #lignefiltre{
    flex-direction: column;
    margin-bottom: 60px;
-   width: 100%;
-   
+   width: 100%;   
 }
 
-
 #ensembleblocfiltre{
-    flex-wrap: wrap; 
-      
+    flex-wrap: wrap;       
  }
 
- .petitblocfiltre{
+.petitblocfiltre{
     justify-content: flex-start;
     font-size: 18px;
     width: auto;   
     margin: 5px;
  }
 
- .petitblocfiltre p{
+.petitblocfiltre p{
      font-size: 14px;
  }
 
@@ -558,7 +558,6 @@ header nav div{
     width: 100%;
 }
 
-
 #afficherplus{
     width: auto;
 }
@@ -570,59 +569,56 @@ header nav div{
 
 /* ACTIVITE */
 
-    #elementun{
-        margin-right: 0px;    
-    }
+#elementun{
+    margin-right: 0px;    
+}
 
-    #elementdeux{ 
-        margin-right: 0px;
-    }
+#elementdeux{ 
+    margin-right: 0px;
+}
 
-    #elementtrois{
-        margin-right: 0px;
-    }
+#elementtrois{
+    margin-right: 0px;
+}
 
-    #activitedeux{
-        margin-bottom: 0px;
-    }
+#activitedeux{
+    margin-bottom: 0px;
+}
 
-    #activitecinq{
-        margin-bottom: 0px;
-    }
+#activitecinq{
+    margin-bottom: 0px;
+}
 
-    #photosactivites{
-        flex-direction: column;    
-        width: 100%;
-    }
+#photosactivites{
+    flex-direction: column;    
+    width: 100%;
+}
 
-     .photosunetquatre{
-        width: 100%;
-        height: 150px;       
-    }
+.photosunetquatre{
+    width: 100%;
+    height: 150px;       
+}
     
-    .photosdeuxetsix{
-        width: 100%;
-        height: 150px;      
-    }
+.photosdeuxetsix{
+    width: 100%;
+    height: 150px;      
+}
     
-    .photostroisetcinq{
-        width: 100%;
-        height: 150px;       
-    }
+.photostroisetcinq{
+    width: 100%;
+    height: 150px;       
+}
     
 /* FOOTER */
-    #footer{
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
+#footer{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
-    }
-    .petitblocfooter{
-        width: 100%;
-        font-size: 14px;
-    }
+.petitblocfooter{
+    width: 100%;
+    font-size: 14px;
+}
 
-     }
-
- }
-
+}
