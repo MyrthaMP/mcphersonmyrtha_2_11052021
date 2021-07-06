@@ -235,7 +235,6 @@ header nav div{
 
 #texteinfo p{
     font-size: 12px;
-    margin-inline-start: 5px;
 }
 
 #conteneuriconinfo{
@@ -243,6 +242,7 @@ header nav div{
     width: 20px;    
     justify-content: center;
     align-items: center;
+    margin-right: 5px ;
 }
 
 #iconinfo{
