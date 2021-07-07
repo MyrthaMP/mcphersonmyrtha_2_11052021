@@ -34,7 +34,6 @@ body section{
 header {
      display:flex;
      width: auto;
-     height: 50px;
      align-items: center; 
      margin-left: 30px;
      margin-right: 30px; 
@@ -519,12 +518,44 @@ h4{
 @media screen and (max-width: 500px) {
 /* MENU */
 
-header{
-    width: 95%;
-    align-items: flex-start; 
-    margin: 0 auto;
+.logoreservia{
+padding-left: 15px;
 }
 
+.menuunetdeux{
+    width: 50%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#menu .menuunetdeux a:hover{
+    color: #0065fc;
+    border-top: none;
+}
+
+#menu .menuunetdeux:hover{
+    color: #0065fc;
+    border-bottom: 1px solid #0065fc;
+    border-top: none;
+}
+
+#inscription{
+    position: absolute;
+    top : 10px;
+    right: 10px;
+}
+
+header{
+    width: 100%;
+    align-items: flex-start; 
+    margin: 0 auto;
+    flex-direction: column;
+}
+header nav{
+    flex-wrap: wrap;
+    width: 100%;
+}
 
 #lignefiltre{
    flex-direction: column;
