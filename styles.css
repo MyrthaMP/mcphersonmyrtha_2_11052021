@@ -442,7 +442,7 @@ header nav div{
     width: 100%;
 }
 
-.petitblocactivite{
+.petitblocactivite{    
     box-shadow: 4px 7px 23px 3px #f2f2f2;
     border-radius: 15px 15px 15px 15px;      
 }
@@ -450,6 +450,7 @@ header nav div{
 .petitblocactivite a{
     text-decoration: none;
     color: black;
+    display: block;
 }
 
 .petitblocactivite h3{
@@ -516,17 +517,27 @@ h4{
  
 
 @media screen and (max-width: 500px) {
+
+body section{
+    width: 100%;
+}
+#recherche{
+    width: 95%;
+}
+
 /* MENU */
 
 .logoreservia{
-padding-left: 15px;
+    padding-left: 15px;
+    width: 100px;
 }
 
 .menuunetdeux{
     width: 50%;
-    border-bottom: 1px solid grey;
+    border-bottom: 3px solid #f2f2f2;
     padding-bottom: 15px;
     text-align: center;
+    margin-top: 30px;
 }
 
 #menu .menuunetdeux a:hover{
@@ -536,14 +547,25 @@ padding-left: 15px;
 
 #menu .menuunetdeux:hover{
     color: #0065fc;
-    border-bottom: 1px solid #0065fc;
+    border-bottom: 3px solid #0065fc;
     border-top: none;
 }
 
 #inscription{
     position: absolute;
-    top : 10px;
+    top : 50px;
     right: 10px;
+    font-size: 17px;
+}
+
+#menuhebergements{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#menuactivites{
+    font-size: 16px;
+    font-weight: bold;
 }
 
 header{
@@ -551,17 +573,41 @@ header{
     align-items: flex-start; 
     margin: 0 auto;
     flex-direction: column;
+    margin-top: 35px;
 }
 header nav{
     flex-wrap: wrap;
     width: 100%;
 }
 
+#intro h1{
+    font-size: 27px;
+}
+
+#intro p{
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+#boutonrechercher{ /* A REVOIR */
+    span style="color: #808080; font-style: italic;">
+    <i class="fas fa-search"></i>
+}
+
+#conteneuriconmapmarker{
+    width: 30px;   
+}
+
+#iconmapmarker{
+    font-size: 16px;
+}
+
 #lignefiltre{
    flex-direction: column;
    align-items: flex-start;
    width: 100%; 
-   height: auto;  
+   height: auto; 
+   box-sizing: border-box; 
 }
 
 #textefiltre {
@@ -583,6 +629,29 @@ header nav{
 .petitblocfiltre p{
      font-size: 16px;
  }
+
+ #texteinfo p{
+    font-size: 17px;
+}
+
+#conteneuriconinfo{
+    display: flex;  
+    width: 25px;    
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px ;
+}
+
+#iconinfo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 3px;
+    font-size: 14px;
+    border: 2px #f2f2f2 solid;
+    color: #0065fc;
+    border-radius: 50px;
+}  
 
 /* HERBERGEMENT */
 
@@ -607,7 +676,8 @@ header nav{
 }
 
 .petitbloch{
-    width: 100%;
+    width: 95%;
+    box-shadow: 4px 7px 23px 3px #f2f2f2
 }
 
 #afficherplus{
@@ -623,6 +693,14 @@ header nav{
 }
 
 /* ACTIVITE */
+
+#Activites{
+    width: 90%;
+}
+.petitblocactivite{
+    margin-top: 20px;
+}
+
 
 #elementun{
     margin-right: 0px;    
@@ -668,11 +746,12 @@ header nav{
 #footer{
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
+    width: calc(100% - 20px);
+    
 }
 
 .petitblocfooter{
-    width: 100%;
+    width: calc(100% - 10px);
     font-size: 14px;
 }
 
