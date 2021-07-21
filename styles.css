@@ -529,7 +529,332 @@ h4{
 
  /* -- DEBUT MEDIA QUERIES --*/
 
- 
+ @media screen and (max-width: 800px) {
+
+    
+body section{
+    width: 100%;
+}
+#recherche{
+    width: 95%;
+}
+
+h2{
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+h3{
+    font-size: 15px;
+}
+
+/* MENU */
+
+.logoreservia{
+    padding-left: 15px;
+    width: 100px;
+}
+
+.menuunetdeux{
+    width: 50%;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#menu .menuunetdeux a:hover{
+    color: #0065fc;
+    border-top: none;
+}
+
+#menu .menuunetdeux:hover{
+    color: #0065fc;
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+}
+
+#inscription{
+    position: absolute;
+    top : 50px;
+    right: 10px;
+    font-size: 17px;
+}
+
+#menuhebergements{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#menuactivites{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header{
+    width: 100%;
+    align-items: flex-start; 
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 35px;
+}
+header nav{
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#intro h1{
+    font-size: 23px;
+}
+
+#intro p{
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+#boutonrechercher{
+    display: none;
+}
+
+#boutonrechercher2{
+    display: block;
+    font-size: 19px;
+}
+
+#conteneuriconmapmarker{
+    width: 30px;   
+}
+
+#lignerecherche {
+display: flex;
+margin-top: 10px;
+width: 100%;
+height: 40px;
+}
+
+#form{
+    flex: 1;
+}
+
+#conteneurboutonrecherche {
+    height: 40px;
+}
+
+#champsderecherche{
+    width: 100%;
+}
+
+#iconmapmarker{
+    font-size: 16px;
+}
+
+#lignefiltre{
+   flex-direction: column;
+   align-items: flex-start;
+   width: 100%; 
+   height: auto; 
+   box-sizing: border-box; 
+}
+
+#textefiltre {
+    justify-content: flex-start;
+}
+
+#ensembleblocfiltre{
+    flex-wrap: wrap;
+    height: auto;       
+ }
+
+.petitblocfiltre{
+    justify-content: flex-start;
+    font-size: 18px;
+    width: auto;   
+    margin: 5px;
+ }
+
+.petitblocfiltre p{
+     font-size: 16px;
+ }
+
+ #texteinfo p{
+    font-size: 17px;
+    margin-bottom: 0px;
+}
+
+#conteneuriconinfo{
+    display: flex;  
+    width: 25px;    
+    align-items: flex-start;
+    margin-top: 1em;
+}
+
+
+/* HERBERGEMENT */
+
+#Hebergements{
+    flex-direction: column;    
+}
+
+#hebergementmarseille{
+    margin-right: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;  
+    border-radius: 0;
+    box-sizing:border-box; 
+}
+
+#ensemblepetitsblocs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;           
+}
+
+.petitbloch{
+    width: 29%;
+    box-shadow: 4px 7px 23px 3px #f2f2f2;
+    margin-bottom: 15px;
+    
+}
+
+.petitbloch p{
+    font-size: 13px;
+    margin-top: 7px;
+    margin-bottom: 7px;    
+}
+
+.photoh{
+    height: 115px;
+}
+
+.descriptif{
+    margin: 3px;
+}
+
+#afficherplus{
+    width: auto;
+    font-size: 20px;
+}
+
+#populaires{
+    width: 100%;
+    padding: 15px;
+    border-radius: 0;
+    box-sizing:border-box;
+}
+
+#ensemblepetitsblocspop{
+    display: flex;
+    flex-direction: row;
+}
+
+.petitblocpop{
+    margin: 5px;
+    width: 31%;
+}
+
+.petitblocpop p{
+    padding-top: 5px;
+}
+
+.photopop{
+    height: 145px;
+}
+
+.textepop{
+    padding-top: 12px;
+    width: 100%;
+}
+
+.textepop .star{
+    margin-top: 60px;
+}
+
+#starpophote{
+    margin-top: 43px;
+}
+
+/* ACTIVITE */
+
+#Activites{
+    width: 90%;
+}
+.petitblocactivite{
+    margin-top: 20px;
+    width: 50%;
+}
+#elementun{
+    margin-right: 0px;   
+    width: 50%; 
+    order: 1;
+}
+
+#elementun .petitblocactivite{
+   width: 100%; 
+}
+
+#elementdeux{ 
+    margin-right: 0px;
+    display: flex;
+    order: 3;    
+}
+
+#elementtrois{
+    margin-right: 0px;
+    width: 50%;
+    order: 2;
+}
+
+#elementtrois .petitblocactivite{
+    width : 100%;
+}
+
+#elementquatre{
+    display: flex;
+    order: 4;
+}
+
+#activitedeux{
+    margin-bottom: 0px;
+}
+
+#activitecinq{
+    margin-bottom: 0px;
+}
+
+#photosactivites{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.photosunetquatre{
+    width: 100%;
+    height: 150px;       
+}
+    
+.photosdeuxetsix{
+    width: 100%;
+    height: 150px;      
+}
+    
+.photostroisetcinq{
+    width: 100%;
+    height: 150px;       
+}
+    
+/* FOOTER */
+#footer{
+    width: calc(100% - 20px);    
+}
+
+.petitblocfooter{
+    width: calc(100% - 10px);
+    font-size: 14px;
+}
+
+}
+/* MEDIA QUERIES 500PX */
 
 @media screen and (max-width: 500px) {
 
@@ -612,8 +937,24 @@ header nav{
     margin-top: 10px;
 }
 
-#lignerecherche{ /* POURSUIVRE*/
-    
+#lignerecherche {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+}
+
+#form{
+    flex: 1
+}
+
+#conteneurboutonrecherche {
+    display: flex;
+    height: 40px;
+}
+
+#champsderecherche {
+    width: 90%;
 }
 
 #boutonrechercher{
@@ -622,10 +963,12 @@ header nav{
 
 #boutonrechercher2{
     display: block;
+    font-size: 19px;
 }
 
 #conteneuriconmapmarker{
-    width: 30px;   
+    width: 30px;
+    border-radius: 10px 0 0 10px;
 }
 
 #iconmapmarker{
@@ -697,15 +1040,13 @@ header nav{
 .petitbloch{
     width: 95%;
     box-shadow: 4px 7px 23px 3px #f2f2f2;
-    margin-bottom: 15px;
-    
+    margin-bottom: 15px;    
 }
 
 .petitbloch p{
     font-size: 13px;
     margin-top: 7px;
-    margin-bottom: 7px;
-    
+    margin-bottom: 7px;    
 }
 
 .photoh{
@@ -729,8 +1070,12 @@ header nav{
     box-sizing:border-box;
 }
 
+#ensemblepetitsblocspop {
+    flex-direction: column;
+}
 .petitblocpop{
     margin-bottom: 15px;
+    width: 95%;
 }
 
 .petitblocpop p{
@@ -743,6 +1088,7 @@ header nav{
 
 .textepop{
     padding-top: 12px;
+    width: 50%;
 }
 
 .textepop .star{
@@ -753,21 +1099,33 @@ header nav{
 
 #Activites{
     width: 90%;
+    margin-top: 0;
 }
 .petitblocactivite{
     margin-top: 20px;
+    width: 100%;
 }
 
 #elementun{
-    margin-right: 0px;    
-}
+    margin-right: 0px; 
+    width: 100%;  
+   }
+
 
 #elementdeux{ 
     margin-right: 0px;
+    flex-direction: column;
 }
 
 #elementtrois{
     margin-right: 0px;
+    width: 100%;
+    
+}
+
+#elementquatre{ 
+    margin-right: 0px;
+    flex-direction: column;
 }
 
 #activitedeux{
@@ -802,8 +1160,7 @@ header nav{
 #footer{
     flex-direction: column;
     flex-wrap: wrap;
-    width: calc(100% - 20px);
-    
+    width: calc(100% - 20px);    
 }
 
 .petitblocfooter{
