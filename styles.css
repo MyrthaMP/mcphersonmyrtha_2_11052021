@@ -714,8 +714,7 @@ height: 40px;
 .petitbloch{
     width: 29%;
     box-shadow: 4px 7px 23px 3px #f2f2f2;
-    margin-bottom: 15px;
-    
+    margin-bottom: 15px;    
 }
 
 .petitbloch p{
@@ -742,6 +741,10 @@ height: 40px;
     padding: 15px;
     border-radius: 0;
     box-sizing:border-box;
+}
+
+#conteneuriconcroissance {
+    font-size: 20px;
 }
 
 #ensemblepetitsblocspop{
@@ -783,6 +786,7 @@ height: 40px;
 .petitblocactivite{
     margin-top: 20px;
     width: 50%;
+    margin-right: 12px;
 }
 #elementun{
     margin-right: 0px;   
@@ -791,7 +795,7 @@ height: 40px;
 }
 
 #elementun .petitblocactivite{
-   width: 100%; 
+   width: 98%; 
 }
 
 #elementdeux{ 
@@ -802,12 +806,14 @@ height: 40px;
 
 #elementtrois{
     margin-right: 0px;
-    width: 50%;
+    width: 49%;
     order: 2;
 }
 
 #elementtrois .petitblocactivite{
-    width : 100%;
+    width : 99%;
+    margin-right: 0px;
+    margin-left: -2px;
 }
 
 #elementquatre{
@@ -1108,32 +1114,38 @@ header nav{
 
 #elementun{
     margin-right: 0px; 
-    width: 100%;  
+    width: 100%;
+    order: 1;  
    }
 
 
 #elementdeux{ 
     margin-right: 0px;
     flex-direction: column;
+    order: 2;
 }
 
 #elementtrois{
     margin-right: 0px;
     width: 100%;
+    order: 3;
     
 }
 
 #elementquatre{ 
     margin-right: 0px;
     flex-direction: column;
+    order: 4;
 }
 
 #activitedeux{
     margin-bottom: 0px;
+    margin-top: 5px;
 }
 
 #activitecinq{
     margin-bottom: 0px;
+    margin-top: 5px;
 }
 
 #photosactivites{
